@@ -1,5 +1,26 @@
-<img
-  class="self-center h-32 m-6"
-  src="/images/cats/cat_1.svg"
-  alt="A cute line-art illustration of a cat wearing a suit"
+---
+import { Image } from "@astrojs/image/components";
+
+const cats = [
+  {
+    src: "/images/cats/cat_1.svg",
+    alt: "A cute line-art illustration of a cat wearing a suit",
+  },
+  {
+    src: "/images/cats/cat_2.svg",
+    alt: "A cute line-art illustration of a cat wearing a suit",
+  },
+];
+
+const cat = cats[Math.floor(Math.random() * cats.length)];
+---
+
+<Image
+  class="self-center m-6"
+  src={cat.src}
+  alt={cat.alt}
+  format="svg"
+  height={120}
+  width={120}
+  aspectRatio={1}
 />
