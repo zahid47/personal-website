@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        pally: ["Pally-Variable", ...defaultTheme.fontFamily.sans],
+        "pally-regular": ["Pally-Regular", ...defaultTheme.fontFamily.sans],
+        "pally-medium": ["Pally-Medium", ...defaultTheme.fontFamily.sans],
       },
       animation: {
         background: "background ease infinite",

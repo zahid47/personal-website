@@ -43,10 +43,19 @@ const { title } = Astro.props;
 
 <style is:global>
   @font-face {
-    font-family: "Pally-Variable";
-    src: url("/fonts/Pally-Variable.woff2") format("woff2"),
-      url("/fonts/Pally-Variable.woff") format("woff");
-    font-weight: 400 700;
+    font-family: "Pally-Regular";
+    src: url("/fonts/Pally-Regular.woff2") format("woff2"),
+      url("/fonts/Pally-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Pally-Medium";
+    src: url("/fonts/Pally-Medium.woff2") format("woff2"),
+      url("/fonts/Pally-Medium.woff") format("woff");
+    font-weight: 500;
     font-display: swap;
     font-style: normal;
   }
