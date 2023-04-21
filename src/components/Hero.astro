@@ -1,0 +1,21 @@
+---
+import CTA from "./CTA.astro";
+import Cat from "./Cat.astro";
+import Intro from "./Intro.astro";
+---
+
+<div class="h-screen flex items-center justify-center">
+  <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="text-center sm:text-left">
+        <section class="flex flex-col sm:flex-row">
+          <Cat />
+          <div>
+            <Intro />
+            <CTA />
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
