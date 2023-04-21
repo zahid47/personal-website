@@ -1,0 +1,43 @@
+---
+import type { Step } from "./Journey.astro";
+
+const { step } = Astro.props as { step: Step };
+
+const getColorBasedOnStage = (stage: Step["stage"]) => {
+  switch (stage) {
+    case "past":
+      return "bg-[#284b90]";
+    case "present":
+      return "bg-teal-400";
+    case "future":
+      return "bg-orange-400";
+  }
+};
+---
+
+<li class={`ml-6 ${!step.isLast && "mb-10"}`}>
+  {
+    step.stage === "present" && (
+      <span
+        class={`animate-ping absolute flex items-center justify-center w-8 h-8 ${getColorBasedOnStage(
+          step.stage
+        )} rounded-full -left-4 ring-4 ring-${getColorBasedOnStage(
+          step.stage
+        )} opacity-75`}
+      />
+    )
+  }
+  <span
+    class={`absolute flex items-center justify-center w-8 h-8 ${getColorBasedOnStage(
+      step.stage
+    )} rounded-full -left-4 ring-4 ring-slate-50`}
+  >
+  </span>
+
+  <h3 class="font-medium leading-tight font-pally-medium text-lg">
+    {step.title}
+  </h3>
+  <p class="text-md font-pally-regular max-w-xs text-slate-300">
+    {step.description}
+  </p>
+</li>
