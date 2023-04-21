@@ -1,33 +1,28 @@
 ---
-import Announcement from "../components/Announcement.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="zahid portfolio">
+<Layout title="Zahid Portfolio">
   <body>
     <div class="bg">
-      <Announcement />
-      <Header />
+      <div class="h-screen flex items-center justify-center">
+        <Header />
     </div>
-    <!-- <p>
-      This example creates a full page background image. Try to resize the
-      browser window to see how it always will cover the full screen (when
-      scrolled to top), and that it scales nicely on all screen sizes.
-    </p> -->
+    </div>
   </body>
 </Layout>
 
 <style>
   body,
   html {
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
   }
 
   .bg {
     background-image: url("images/bg.png");
-    height: 100%;
+    /* height: 100%; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
