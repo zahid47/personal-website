@@ -1,12 +1,27 @@
 <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-  <a
-    target="_blank"
-    href="https://github.com/zahid47"
-    class="block rounded-lg bg-white px-5 py-3 text-sm font-medium text-gray-900 transition hover:bg-gray-100 focus:outline-none focus:ring text-center"
+  <div
+    class="animate-background rounded-xl hover:bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-[length:400%_400%] p-1 transition [animation-duration:_6s]"
   >
-    <h2 class="font-pally">
-      GitHub
-      <span>&rarr;</span>
-    </h2>
-  </a>
+    <a
+      target="_blank"
+      href="https://github.com/zahid47"
+      class="link-arrow block rounded-lg bg-white px-5 py-3 text-sm font-medium text-slate-700 transition text-center"
+    >
+      <p class="font-pally font-bold">
+        GitHub
+        <span class="arrow">&rarr;</span>
+      </p>
+    </a>
+  </div>
 </div>
+
+<style>
+  .link-arrow span {
+    display: inline-block;
+    transition: 0.1s ease-in;
+  }
+
+  .link-arrow:hover span {
+    transform: translateX(50%);
+  }
+</style>
