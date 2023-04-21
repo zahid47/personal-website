@@ -1,18 +1,10 @@
 ---
 import { Image } from "@astrojs/image/components";
 
-const cats = [
-  {
-    src: "/images/cats/cat_1.svg",
-    alt: "A cute line-art illustration of a cat wearing a suit",
-  },
-  {
-    src: "/images/cats/cat_2.svg",
-    alt: "A cute line-art illustration of a cat wearing a suit",
-  },
-];
-
-const cat = cats[Math.floor(Math.random() * cats.length)];
+const cat = {
+  src: "/images/cats/cat_1.svg",
+  alt: "A cute line-art illustration of a cat wearing a suit",
+};
 ---
 
 <Image
