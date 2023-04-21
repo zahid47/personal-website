@@ -13,7 +13,7 @@ const gradient = gradients[Math.floor(Math.random() * gradients.length)];
     <a
       target="_blank"
       href="https://github.com/zahid47"
-      class="link-arrow block rounded-lg bg-white px-5 py-3 text-sm font-medium text-slate-700 transition text-center"
+      class="link block rounded-lg bg-white px-5 py-3 text-sm font-medium text-slate-700 transition text-center"
     >
       <p class="font-pally font-bold">
         GitHub
@@ -24,12 +24,16 @@ const gradient = gradients[Math.floor(Math.random() * gradients.length)];
 </div>
 
 <style>
-  .link-arrow span {
+  .link span {
     display: inline-block;
     transition: 0.1s ease-in;
   }
 
-  .link-arrow:hover span {
+  .link:hover span {
+    transform: translateX(50%);
+  }
+
+  .link:focus span {
     transform: translateX(50%);
   }
 </style>
