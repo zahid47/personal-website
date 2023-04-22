@@ -1,0 +1,178 @@
+---
+import Project from "./Project.astro";
+
+interface Stack {
+  id: number;
+  name: string;
+  color?: string;
+}
+
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  stack: Stack[];
+  link: string;
+  timeframe: string;
+}
+
+const projects: Project[] = [
+  {
+    id: 1,
+    title: "Quiz App",
+    description:
+      "A sophisticated quiz platform, which allows users to generate and customize quizzes with an indefinite number of questions, each containing an infinite number of options.",
+    stack: [
+      {
+        id: 1,
+        name: "TypeScript",
+      },
+      {
+        id: 2,
+        name: "Express.js",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+      },
+      {
+        id: 4,
+        name: "React",
+      },
+    ],
+    link: "https://github.com/zahid47/quiz-app",
+    timeframe: "Sept 2022",
+  },
+  {
+    id: 2,
+    title: "sharp-watermark",
+    description:
+      "An open-source NPM package to easily add watermarks to your photos",
+    stack: [
+      {
+        id: 1,
+        name: "TypeScript",
+      },
+      {
+        id: 2,
+        name: "NPM",
+      },
+    ],
+    link: "https://www.npmjs.com/package/sharp-watermark",
+    timeframe: "April 2023",
+  },
+  {
+    id: 3,
+    title: "Pizza App",
+    description:
+      "A comprehensive pizza shop application, complete with cutting-edge features such as live order processing.",
+    stack: [
+      {
+        id: 1,
+        name: "TypeScript",
+      },
+      {
+        id: 2,
+        name: "Express.js",
+      },
+      // {
+      //   id: 3,
+      //   name: "MongoDB",
+      // },
+      {
+        id: 4,
+        name: "React",
+      },
+      {
+        id: 5,
+        name: "Socket.io",
+      },
+    ],
+    link: "https://github.com/zahid47/pizza-app",
+    timeframe: "June 2022 - August 2022",
+  },
+  {
+    id: 4,
+    title: "Mixify",
+    description:
+      "A customized playlist of remixed songs, derived from an existing Spotify playlist. The app enables users to enjoy their favorite tracks in a fresh and exciting way.",
+    stack: [
+      {
+        id: 1,
+        name: "JavaScript",
+      },
+      {
+        id: 2,
+        name: "SpotifyWebAPI",
+      },
+      {
+        id: 3,
+        name: "React",
+      },
+    ],
+    link: "https://github.com/zahid47/mixify",
+    timeframe: "December 2021 - April 2022",
+  },
+  {
+    id: 5,
+    title: "CR2",
+    description:
+      "A script to extract and simplify the complex class schedules of our university, providing users with an easily digestible version that solely features their respective classes.",
+    stack: [
+      {
+        id: 1,
+        name: "Python",
+      },
+      {
+        id: 2,
+        name: "Flask",
+      },
+      {
+        id: 3,
+        name: "Openpyxl",
+      },
+      {
+        id: 4,
+        name: "React",
+      },
+    ],
+    link: "https://github.com/zahid47/CR2",
+    timeframe: "February 2021 - March 2021",
+  },
+  {
+    id: 6,
+    title: "MuteAll",
+    description:
+      "A Discord bot to mute all members within a voice channel. It has gained widespread popularity, being used in over 8k Discord servers with nearly 1M members across diverse communities.",
+    stack: [
+      {
+        id: 1,
+        name: "Python",
+      },
+      {
+        id: 2,
+        name: "Pycord",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+      },
+    ],
+    link: "https://github.com/zahid47/MuteAll",
+    timeframe: "September 2020 - July 2022",
+  },
+];
+---
+
+<article class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
+  <h1 class="font-pally-medium text-center text-slate-200 text-xl p-20">
+    Projects
+  </h1>
+  <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {
+      projects.map((project: Project) => (
+        <Project key={project.id} project={project} />
+      ))
+    }
+  </div>
+</article>

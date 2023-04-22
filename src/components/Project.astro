@@ -1,0 +1,41 @@
+---
+import type { Project } from "./Projects.astro";
+
+const { project } = Astro.props as { project: Project };
+---
+
+<a
+  href={project.link}
+  target="_blank"
+  class="hover:animate-background rounded-xl hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 transition hover:bg-[length:400%_400%] hover:[animation-duration:_2s]"
+>
+  <div class="rounded-[10px] bg-slate-200 p-4 !pt-20 sm:p-6">
+    <time class="block text-xs text-slate-800" font-pally-regular>
+      {project.timeframe}
+    </time>
+
+    <h3
+      class="font-pally-medium mt-0.5 text-xl font-medium text-[#6581c0] pb-2 line-clamp-1"
+    >
+      {project.title}
+    </h3>
+
+    <p
+      class="font-pally-regular mt-0.5 text-sm font-regular text-slate-800 line-clamp-4 min-h-[5rem]"
+    >
+      {project.description}
+    </p>
+
+    <div class="mt-4 flex flex-wrap gap-1">
+      {
+        project.stack.map((s) => (
+          <span
+            class="whitespace-nowrap rounded-full bg-slate-600 px-2.5 py-0.5 text-sm text-slate-200"
+          >
+            <span class="font-pally-regular">{s.name}</span>
+          </span>
+        ))
+      }
+    </div>
+  </div>
+</a>
