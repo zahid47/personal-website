@@ -61,7 +61,7 @@ const steps: Step[] = [
 ---
 
 <article>
-  <h1 class="font-pally-medium text-center text-slate-200 text-xl p-20">
+  <h1 class="font-pally-medium text-center text-slate-200 text-xl p-5">
     {t("journey.my-journey")}
   </h1>
   <div class="flex items-center justify-center">
@@ -69,5 +69,4 @@ const steps: Step[] = [
       {steps.map((step: Step) => <JourneyStep key={step.id} step={step} />)}
     </ol>
   </div>
-  <div class="mb-20"></div>
 </article>
