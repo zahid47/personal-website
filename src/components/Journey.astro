@@ -1,6 +1,11 @@
 ---
 import JourneyStep from "./JourneyStep.astro";
 
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 export interface Step {
   id: number;
   title: string;
@@ -12,48 +17,43 @@ export interface Step {
 const steps: Step[] = [
   {
     id: 1,
-    title: "2014",
-    description:
-      "I started tinkering with computers when I was at high school and my fascination with technology began. Started learning coding and design.",
+    title: t("journey.1"),
+    description: t("journey.1-text"),
     stage: "past",
     isLast: false,
   },
   {
     id: 2,
     title: "2016 - 2018",
-    description:
-      "Started working as a freelance UI/UX designer and contributed to multiple products that successfully launched in app stores.",
+    description: t("journey.2-text"),
     stage: "past",
     isLast: false,
   },
   {
     id: 3,
     title: "2019 - 2023",
-    description: "Pursued my bachelor's degree in Software Engineering.",
+    description: t("journey.3-text"),
     stage: "past",
     isLast: false,
   },
   {
     id: 4,
     title: "2022 - 2023",
-    description:
-      "Got my first job as a software engineer. Helped launch a new startup by contributing to key features.",
+    description: t("journey.4-text"),
     stage: "past",
     isLast: false,
   },
   {
     id: 5,
-    title: "2022 - Current",
-    description:
-      "Got admitted to the B-JET program where I'm learning Japanese language, culture and business manners.",
+    title: t("journey.5"),
+    description: t("journey.5-text"),
     stage: "present",
     isLast: false,
   },
   {
     id: 6,
-    title: "Beyond",
-    description:
-      "I want to work as a software engineer in Japan and contrubute to impactful projects that will make a difference in people's lives.",
+    title: t("journey.6"),
+    description: t("journey.6-text"),
     stage: "future",
     isLast: true,
   },
@@ -62,7 +62,7 @@ const steps: Step[] = [
 
 <article>
   <h1 class="font-pally-medium text-center text-slate-200 text-xl p-20">
-    My Journey
+    {t("journey.my-journey")}
   </h1>
   <div class="flex items-center justify-center">
     <ol class="relative text-slate-200 border-l border-slate-200">
