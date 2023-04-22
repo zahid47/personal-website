@@ -1,18 +1,26 @@
+---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <footer aria-label="Site Footer">
   <div class="mx-auto max-w-screen-xl p-2 sm:px-6 lg:px-8">
     <div class="text-center text-slate-300 font-pally-regular text-sm p-4">
-      <p>
+      <div>
         <a
           target="_blank"
-          href="https://thenounproject.com/icon/cat-suit-232264">Cat Suit</a
-        > icon created by Denis Sazhin from Noun Project.
-      </p>
-      <p>
-        {`Designed & Developed by`}
-        <a target="_blank" tabindex="-1" href="https://github.com/zahid47"
-          >Zahid</a
-        > &copy; {`${new Date().getFullYear()}`}
-      </p>
+          href="https://thenounproject.com/icon/cat-suit-232264"
+          >{t("footer.cat")}</a
+        >
+      </div>
+
+      <div>
+        <a target="_blank" href="https://github.com/zahid47"
+          >{t("footer.copy")} &copy; {`${new Date().getFullYear()}`}</a
+        >
+      </div>
     </div>
   </div>
 </footer>
