@@ -2,22 +2,26 @@
 import Footer from "../../components/Footer.astro";
 import Hero from "../../components/Hero.astro";
 import Journey from "../../components/Journey.astro";
-import Nav from "../../components/Nav.EN.astro";
+import Nav from "../../components/Nav.astro";
 import Projects from "../../components/Projects.astro";
 import Layout from "../../layouts/Layout.astro";
+
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<Layout title="Portfolio of Zahid">
-  <body>
-    <div class="bg">
-      <Nav/>
-      <Hero />
-    </div>
-    <Journey />
-    <Projects />
-    <Footer />
-  </body>
-</Layout>
+<Layout title={t("title")} />
+<body>
+  <div class="bg">
+    <Nav />
+    <Hero />
+  </div>
+  <Journey />
+  <Projects />
+  <Footer />
+</body>
 
 <style>
   body,
