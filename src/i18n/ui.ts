@@ -57,7 +57,7 @@ export const ui = {
     title: "ザヒドのポートフォリオ",
     
     "hero.yahallo": "ヤハロ！",
-    "hero.nice-to-meet-you": "お会いできて嬉しいです。",
+    "hero.nice-to-meet-you": "よろしくおねがいします。",
     "hero.intro": "私はダッカを拠点とするソフトウェア エンジニアです。Web アプリケーション、discord ボット、ビデオ ゲームなど、あらゆるものを構築しています。",
 
     "journey.my-journey": "私の旅",
