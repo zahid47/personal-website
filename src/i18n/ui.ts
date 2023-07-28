@@ -11,7 +11,7 @@ export const ui = {
 
     "hero.yahallo": "Yahallo!",
     "hero.nice-to-meet-you": "Nice to meet you",
-    "hero.intro": "I am a software engineer based in Dhaka. I build web applications, discord bots, video games and everything in between.",
+    "hero.intro": "I am a software engineering graduate. I build web applications, discord bots, video games and everything in between.",
 
     "journey.my-journey": "My Journey",
     "journey.1": "2014",
@@ -26,29 +26,29 @@ export const ui = {
 
     "projects.projects": "Projects",
 
-    "projects.1.time": "Sept 2022",
-    "projects.1.title": "Quiz App",
-    "projects.1.description": "A sophisticated quiz platform, which allows users to generate and customize quizzes with an indefinite number of questions, each containing an infinite number of options.",
+    "projects.1.time": "June 2023 - Present",
+    "projects.1.title": "Realistiq",
+    "projects.1.description": "A home renting platform built with Next.js 13 and React server components and serverless architecture.",
 
-    "projects.2.time": "April 2023",
-    "projects.2.title": "sharp-watermark",
-    "projects.2.description": "An open-source NPM package to easily add watermarks to your photos",
-    
-    "projects.3.time": "June 2022 - August 2022",
-    "projects.3.title": "Pizza App",
-    "projects.3.description": "A comprehensive pizza shop application, complete with features such as live order processing using socket.io.",
+    "projects.2.time": "Sept 2022",
+    "projects.2.title": "Quiz App",
+    "projects.2.description": "A quiz platform to create and take quizzes with timers and scoring.",
+
+    "projects.3.time": "April 2023",
+    "projects.3.title": "sharp-watermark",
+    "projects.3.description": "An open-source NPM package to easily add watermarks to your photos.",
     
     "projects.4.time": "December 2021 - April 2022",
     "projects.4.title": "Mixify",
-    "projects.4.description": "A customized playlist of remixed songs, derived from an existing Spotify playlist. The app enables users to enjoy their favorite tracks in a fresh and exciting way.",
+    "projects.4.description": "Remix your Spotify playlist and relive your favorite songs!",
     
     "projects.5.time": "February 2021 - March 2021",
     "projects.5.title": "CR2",
-    "projects.5.description": "A script to extract and simplify the complex class schedules of our university, providing users with an easily digestible version that solely features their respective classes.",
+    "projects.5.description": "Scrape my university’s hard to understand routine and create a simple version and serve it as a web app for all students to use.",
     
     "projects.6.time": "September 2020 - July 2022",
     "projects.6.title": "MuteAll",
-    "projects.6.description": "A Discord bot to mute all members within a voice channel. It has gained widespread popularity, being used in over 8k servers with nearly 1M members across diverse communities.",
+    "projects.6.description": "A discord bot to help admins mute people automatically in a voice call. Used by almost 1M users worldwide.",
     
     "footer.cat": "Cat Suit icon created by Denis Sazhin from Noun Project.",
     "footer.copy": "Designed & Developed by Zahid",
@@ -58,7 +58,7 @@ export const ui = {
     
     "hero.yahallo": "ヤハロ！",
     "hero.nice-to-meet-you": "よろしくおねがいします。",
-    "hero.intro": "私はダッカを拠点とするソフトウェア エンジニアです。Web アプリケーション、discord ボット、ビデオ ゲームなど、あらゆるものを構築しています。",
+    "hero.intro": "私はソフトウェア工学の学位を持っています。ウェブアプリケーション、ディスコードボット、ビデオゲームなど、あらゆるものを構築しています。",
 
     "journey.my-journey": "私の旅",
     "journey.1": "2014年",
@@ -73,25 +73,29 @@ export const ui = {
 
     "projects.projects": "プロジェクト",
 
-    "projects.1.time": "2022年9月",
-    "projects.1.title": "クイズアプリ",
-    "projects.1.description": "洗練されたクイズ プラットフォーム。ユーザーは、無数の質問を含むクイズを生成およびカスタマイズできます。それぞれの質問には無限の数のオプションが含まれています。",
+    "projects.1.time": "2023年6月 - 現在",
+    "projects.1.title": "Realistiq",
+    "projects.1.description": "Next.js 13とReactサーバーコンポーネント、サーバーレスアーキテクチャーで構築されたホームレンタルプラットフォーム。",
 
-    "projects.2.time": "2023年4月",
-    "projects.2.description": "写真に透かしを簡単に追加できるオープンソースの NPM パッケージ",
+    "projects.2.time": "2022年9月",
+    "projects.2.title": "Quiz App",
+    "projects.2.description": "タイマーとスコアリングを備えたクイズプラットフォーム。",
+
+    "projects.3.time": "2023年4月",
+    "projects.3.title": "sharp-watermark",
+    "projects.3.description": "写真にウォーターマークを簡単に追加できるオープンソースのNPMパッケージ。",
     
-    "projects.3.time": "2022年6月～2022年8月",
-    "projects.3.title": "ピザアプリ",
-    "projects.3.description": "socket.io を使用したライブ注文処理などの機能を備えた、包括的なピザ ショップ アプリケーションです。",
+    "projects.4.time": "2021年12月 - 2022年4月",
+    "projects.4.title": "Mixify",
+    "projects.4.description": "Spotifyプレイリストをリミックスして、お気に入りの曲をもう一度楽しもう！",
     
-    "projects.4.time": "2021年12月～2022年4月",
-    "projects.4.description": "既存の Spotify プレイリストから派生した、リミックスされた曲のカスタマイズされたプレイリスト。 お気に入りの曲を新鮮でエキサイティングに楽しむことができます。",
+    "projects.5.time": "2021年2月 - 2021年3月",
+    "projects.5.title": "CR2",
+    "projects.5.description": "大学の理解しにくいルーチンをスクレイピングし、簡単なバージョンを作成して、すべての学生が使用できるようにWebアプリケーションとして提供します。",
     
-    "projects.5.time": "2021年2月～2021年3月",
-    "projects.5.description": "私たちの大学の複雑な授業スケジュールを抽出して簡素化するスクリプトで、それぞれの授業だけを取り上げた簡単に消化できるバージョンをユーザーに提供します。",
-    
-    "projects.6.time": "2020年9月～2022年7月",
-    "projects.6.description": "音声チャネル内のすべてのメンバーをミュートする Discord ボット。 幅広い人気を博し、8,000 を超えるサーバーで使用され、さまざまなコミュニティに 100 万人近くのメンバーがいます。",
+    "projects.6.time": "2020年9月 - 2022年7月",
+    "projects.6.title": "MuteAll",
+    "projects.6.description": "Discordボットを使用して、管理者がボイスコールで人を自動的にミュートできるようにします。世界中のほぼ100万人のユーザーに使用されています。",
 
     "footer.cat": "Noun Project の Denis Sazhin によって作成されたキャット スーツのアイコン。",
     "footer.copy": "Zahidによって設計および開発されました",
