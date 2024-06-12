@@ -7,11 +7,11 @@ export const defaultLang = "en";
 
 export const ui = {
   en: {
-    title: "Portfolio of Zahid",
+    title: "Welcome",
 
     "hero.yahallo": "Yahallo!",
     "hero.nice-to-meet-you": "Nice to meet you",
-    "hero.intro": "I am a software engineering graduate. I build web applications, discord bots, video games and everything in between.",
+    "hero.intro": "Software engineer @EzyCourse by day, buiding cool stuff by night.",
 
     "journey.my-journey": "My Journey",
     "journey.1": "2014",
@@ -54,11 +54,11 @@ export const ui = {
     "footer.copy": "Designed & Developed by Zahid",
   },
   jp: {
-    title: "ザヒドのポートフォリオ",
+    title: "ウェルカム",
     
     "hero.yahallo": "ヤハロ！",
     "hero.nice-to-meet-you": "よろしくおねがいします。",
-    "hero.intro": "私はソフトウェア工学の学位を持っています。ウェブアプリケーション、ディスコードボット、ビデオゲームなど、あらゆるものを構築しています。",
+    "hero.intro": "昼はソフトウェアエンジニア @EzyCourse、夜はクールなものを作る。",
 
     "journey.my-journey": "私の旅",
     "journey.1": "2014年",
